@@ -282,7 +282,7 @@ module.exports = function (grunt) {
         grunt.file.write('.tmp/scripts/templates.js', 'this.JST = this.JST || {};');
     });
 
-    grunt.registerTask('server', function () {
+    grunt.registerTask('server', function (target) {
         grunt.log.warn('The `server` task has been deprecated. Use `grunt serve` to start a server.');
         grunt.task.run(['serve:' + target]);
     });
@@ -326,8 +326,7 @@ module.exports = function (grunt) {
                 'jst',
                 'compass',
                 'connect:test',
-                'mocha',
-                'watch:test'
+                'mocha'
             ];
             
         if(!isConnected) {
@@ -338,6 +337,11 @@ module.exports = function (grunt) {
             return grunt.task.run(testTasks);
         }
     });
+
+    grunt.registerTask('watch-test', [
+        'test',
+        'watch:test'
+    ]);
 
     grunt.registerTask('build', [
         'clean:dist',
