@@ -1,6 +1,6 @@
 # Diplomat
 
-[issues]:
+[issues]: https://github.com/garbados/diplomat/issues
 [license]: http://opensource.org/licenses/MIT
 
 A conflict viewer for CouchDB and Cloudant
@@ -9,7 +9,7 @@ A conflict viewer for CouchDB and Cloudant
 
 Diplomat runs as a couchapp living inside a CouchDB or Cloudant database, so make sure that database is created and running before you start. Then:
 
-    git clone [repo]
+    git clone git@github.com:garbados/diplomat.git
     cd diplomat
     npm install && bower install
     grunt deploy --database DATABASE
