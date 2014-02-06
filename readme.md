@@ -16,8 +16,6 @@ Diplomat runs as a couchapp living inside a CouchDB or Cloudant database, so mak
 
 ... and visit <http://localhost:5984/DATABASE/_design/diplomat/_rewrite> to see it.
 
-Diplomat is now live at 
-
 ## Test
 
 Diplomat uses Mocha for tests. To run them, do:
