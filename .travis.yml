@@ -15,3 +15,6 @@ before_install:
   # bower!!
   - npm install -g bower
   - bower install
+  - cd test
+  - bower install
+  - cd ..
