@@ -1,5 +1,7 @@
 # Diplomat
 
+[![Build Status](https://travis-ci.org/garbados/diplomat.png?branch=master)](https://travis-ci.org/garbados/diplomat)
+
 [issues]: https://github.com/garbados/diplomat/issues
 [license]: http://opensource.org/licenses/MIT
 
