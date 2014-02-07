@@ -20,9 +20,13 @@ Diplomat runs as a couchapp living inside a CouchDB or Cloudant database, so mak
 
 Diplomat uses Mocha for tests. To run them, do:
 
-    grunt test
+    npm test
 
-Which will run the tests, and then watch the project for any changes, and run them again when it detects any.
+Which will run the test suite. To run the tests, and run them again whenever anything changes, do:
+
+    grunt watch-test
+
+Enjoy!
 
 ## Contribute
 
