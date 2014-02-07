@@ -4,6 +4,10 @@ node_js:
 - '0.10'
 
 before_install:
+  # init browser
+  - "export DISPLAY=:99.0"
+  - "sh -e /etc/init.d/xvfb start"
+  # install ruby packages
   - gem update --system
   - gem install sass
   - gem install compass
